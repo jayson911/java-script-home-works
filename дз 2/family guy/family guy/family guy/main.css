@@ -1,0 +1,62 @@
+
+.style-main {
+    text-align: center;
+}
+.text {
+    text-align: justify; 
+    font-size: 25px; 
+    color: Black; 
+    font-family: Comic Sans MS;
+}
+
+.text-family {
+    color: Black;
+    text-align: justify;
+}
+
+.picture {
+    padding-left: 100px;
+}
+.style-ul {
+    font-size: 25px; 
+    color: Black; 
+    font-family: Comic Sans MS
+}.style-id {
+    display: flex; 
+    font-family: 
+    Comic Sans MS;
+}.style-div {
+    padding-top: 50px; 
+    padding-left: 100px;
+}
+.dropbtn {
+    background-color: #1f76e7;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f76e7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #1f76e71;}

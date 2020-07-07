@@ -1,0 +1,21 @@
+.demo { 
+    position:relative; 
+    margin:0 auto; 
+    height: 200px;
+    width:200px;
+    display: block;
+}
+
+  .demo img { 
+    left: 0; 
+    position:absolute; 
+    top: 0; 
+    -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+  .demo img.raz {opacity:0;filter:alpha(opacity=0);}
+  .demo:hover img.raz {opacity:1;filter:alpha(opacity=100);}
+  .demo:hover img.dva, .demo img.dva:hover {opacity:0;filter:alpha(opacity=0);}
