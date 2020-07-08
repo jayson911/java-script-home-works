@@ -146,10 +146,10 @@
 
 // -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
 // - отримує текст з параграфа з id "content"
-// let content = document.getElementById('content');
+// let content = document.getElementById('content').textContent;
 // console.log(content);
 // - отримує текст з блоку з id "rules"
-// let rules = document.getElementById('rules');
+// let rules = document.getElementById('rules').textContent;
 // console.log(rules);
 // - замініть текст параграфа з id 'content' на будь-який інший
 // let content = document.getElementById('content');
@@ -246,8 +246,8 @@
 // }
 // -- отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment. 
 // Колір отримати з prompt()
-    let inOf = element.textContent.indexOf('content 2');
-    if(inOf !== -1) element.style.color = prompt('color');
+    // let inOf = element.textContent.indexOf('content 2');
+    // if(inOf !== -1) element.style.color = prompt('color');
 // -- отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
     // let inOf1 = element.textContent.indexOf('content 1');
     // if(inOf1 !== -1) element.innerHTML = prompt('елемент з класом content_1 заміняє тест на довільний');
