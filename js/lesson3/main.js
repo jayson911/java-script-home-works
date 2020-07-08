@@ -195,15 +195,70 @@
 // Взяти файл template_2.html та працювати в ньому
 // - Напишіть код, який :
 // -- змінює колір тексту елемнту з ід main_header на будь-який інший
+// let txtColor = document.getElementById('main_header')
+// txtColor.style.color = 'red';
+// console.log(txtColor);
 // -- робить шириниу елементу ul 400 пікселів
+// let widthUl = document.getElementsByTagName ('ul') [0];
+// widthUl.style.width = '400px';
 // -- робить шириниу всіх елементів з класом linkList шириною 50%
+// let links = document.getElementsByClassName ('linkList');
+// for(i = 0; i < links.length; i++) {
+//     links[i].style.width = '50%';
+// }
+// console.log(links);
 // -- отримує текст який зберігається в елементі з класом listElement2
+// let listElement2 = document.querySelector('.listElement2');
+// console.log(listElement2.textContent)
 // -- отримує всі елементи li та змінює ім колір фону на сірий
+// let liColor = document.getElementsByTagName('li');
+// for(i = 0; i < liColor.length; i++) {
+//     liColor[i].style.backgroundColor = 'grey';
+// }
+// console.log(liColor);
 // -- отримує всі елементи 'a' та додає їм клас anchor
+// let aElem = document.getElementsByTagName('a');
+// for(i = 0; i < aElem.length; i++) {
+//     let elemen = aElem[i];
+//     elemen.classList.add('anchor');
+// }
+// console.log(aElem);
 // -- отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
+// let aElem = document.getElementsByTagName('a');
+// for(i = 0; i < aElem.length; i++) {
+//     let elemen = aElem[i];
+//     if(elemen.textContent == 'link3') elemen.style.fontSize = '40px';
+// }
+// console.log(aElem);
 // -- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+// let aElem = document.getElementsByTagName('a');
+// for (i = 0; i < aElem.length; i++) {
+//     let element = aElem[i];
+//     element.classList.add(`element_${element.textContent}`);
+// }
+// console.log(aElem);
 // -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-// -- отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
+// let b = prompt('Фон');
+// let a4 = document.getElementsByClassName('sub-header');
+// for (i = 0; i < a4.length; i++) {
+//     let element = a4[i];
+//     element.style.background = b;
+// }
+// -- отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment. 
+// Колір отримати з prompt()
+    let inOf = element.textContent.indexOf('content 2');
+    if(inOf !== -1) element.style.color = prompt('color');
 // -- отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
+    // let inOf1 = element.textContent.indexOf('content 1');
+    // if(inOf1 !== -1) element.innerHTML = prompt('елемент з класом content_1 заміняє тест на довільний');
+// }
+
 // -- отримати елементи p та змінити їм paddin на довільне значення
+// let p = document.getElementsByTagName('p');
+// for (i = 0; i < p.length; i++) {
+//     let element = p[i];
+//     element.style.padding = '10px';
 // -- отримати елементи з класом text2 та змінити їм текст на довільне значення
+//     let inOf1 = element.className.indexOf('text2');
+//     if(inOf1 !== -1) element.innerHTML = 'отримати елементи з класом text2 та змінити їм текст на довільне значення';
+// }
