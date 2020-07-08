@@ -99,46 +99,46 @@
 
 
 // Дан массив:
-let users = [
-				{name: 'vasya', age: 31, status: false},
-				{name: 'petya', age: 30, status: true},
-				{name: 'kolya', age: 29, status: true},
-				{name: 'olya', age: 28, status: false},
-				{name: 'max', age: 30, status: true},
-				{name: 'anya', age: 31, status: false},
-				{name: 'oleg', age: 28, status: false},
-				{name: 'andrey', age: 29, status: true},
-				{name: 'masha', age: 30, status: true},
-				{name: 'olya', age: 31, status: false},
-				{name: 'max', age: 31, status: true}
-			];
+// let users = [
+// 				{name: 'vasya', age: 31, status: false},
+// 				{name: 'petya', age: 30, status: true},
+// 				{name: 'kolya', age: 29, status: true},
+// 				{name: 'olya', age: 28, status: false},
+// 				{name: 'max', age: 30, status: true},
+// 				{name: 'anya', age: 31, status: false},
+// 				{name: 'oleg', age: 28, status: false},
+// 				{name: 'andrey', age: 29, status: true},
+// 				{name: 'masha', age: 30, status: true},
+// 				{name: 'olya', age: 31, status: false},
+// 				{name: 'max', age: 31, status: true}
+			// ];
 // - звернутися в відповідну ячейку масиву і відповідний параметр об'єкта і вивести в консольх наступне
 // - статус Андрія
-let AndreyStatus = users[7].status;
-console.log(AndreyStatus);
-// - статус Максима
-let MaxStatus = users[4].status;
-console.log(MaxStatus);
-// - ім'я передостаннього об'єкту
-let OlyaName = users[9].name;
-console.log(OlyaName);
-// - ім'я третього об'єкта
-let KolyaName = users[2].name;
-console.log(KolyaName);
-// - вік Олега
-let OlegAge = users[6].age;
-console.log(OlegAge);
-// - вік Ол
-let OlyaAge = users[3].age;
-console.log(OlyaAge);
-// - вік + ім'я 5го об'єкта
-let MaxAge = users[4].age;
-let MaxName = users[4].name;
-console.log(MaxAge, MaxName);
-// - вік + сатус Анни
-let AnyaAge = users[5].age;
-let AnyaStatus = users[5].status;
-console.log(AnyaAge, AnyaStatus);
+// let AndreyStatus = users[7].status;
+// console.log(AndreyStatus);
+// // - статус Максима
+// let MaxStatus = users[4].status;
+// console.log(MaxStatus);
+// // - ім'я передостаннього об'єкту
+// let OlyaName = users[9].name;
+// console.log(OlyaName);
+// // - ім'я третього об'єкта
+// let KolyaName = users[2].name;
+// console.log(KolyaName);
+// // - вік Олега
+// let OlegAge = users[6].age;
+// console.log(OlegAge);
+// // - вік Ол
+// let OlyaAge = users[3].age;
+// console.log(OlyaAge);
+// // - вік + ім'я 5го об'єкта
+// let MaxAge = users[4].age;
+// let MaxName = users[4].name;
+// console.log(MaxAge, MaxName);
+// // - вік + сатус Анни
+// let AnyaAge = users[5].age;
+// let AnyaStatus = users[5].status;
+// console.log(AnyaAge, AnyaStatus);
 // Приклад: вивести ім'я 1го об'єкта. Відповідь: console.log (users [0] .name). Будьте уважні! 4й об'єкт має індес 3!
 
 
@@ -146,14 +146,44 @@ console.log(AnyaAge, AnyaStatus);
 
 // -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
 // - отримує текст з параграфа з id "content"
+// let content = document.getElementById('content');
+// console.log(content);
 // - отримує текст з блоку з id "rules"
+// let rules = document.getElementById('rules');
+// console.log(rules);
 // - замініть текст параграфа з id 'content' на будь-який інший
+// let content = document.getElementById('content');
+// content.innerText = 'fight club';
+// console.log(content);
 // - замініть текст параграфа з id 'rules' на будь-який інший
+// let rules = document.getElementById('rules');
+// rules.innerText = 'abra kadabra';
+// console.log(rules);
 // - змініть кожному елементу колір фону на червоний
+// let ElementColor = document.getElementsByTagName('li');
+// for(i = 0; i < ElementColor.length; i++) {
+//     ElementColor[i].style.background = 'red';
+// }
+// console.log(ElementColor);
+
 // - змініть кожному елементу колір тексту на синій
+// let ElementColor = document.getElementsByTagName('p');
+// for(i = 0; i < ElementColor.length; i++) {
+//     ElementColor[i].style.background = 'blue';
+// }
+// console.log(ElementColor);
 // - отримати весь список класів елемента з id=rules і вивести їх в console.log
+// let elemen = document.getElementById('rules');
+// console.log(elemen.classList);
 // - отримати всі елементи з класом fc_rules
+// let element = document.getElementsByClassName('fc_rules')
+// console.log(element);
 // - поміняти колір тексту у всіх елементів fc_rules на червоний
+// let element = document.getElementsByClassName('fc_rules')
+// for(i = 0; i < element.length; i++) {
+// element[i].style.background = 'red';
+// }
+// console.log(element);
 
 // ====================
 // ====================
