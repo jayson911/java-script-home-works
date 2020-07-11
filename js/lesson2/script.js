@@ -177,12 +177,12 @@ console.log(str);
 
 
 // // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-// let arre = [ 'a', 'b', 'c'];
-// let stre = '';
-// for (const iterator of arre) {
-//     stre += iterator
-// }
-// console.log(stre);
+let arre = [ 'a', 'b', 'c'];
+let stre = '';
+for (const iterator of arre) {
+    stre += iterator
+}
+console.log(stre);
 
 // // =================
 // // =================
