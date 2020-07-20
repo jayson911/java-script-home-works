@@ -2,17 +2,17 @@
 // - создать массив с 20 числами.
 // let arr = [1, 2, 4, 55, 88, 7, 29, 58, 78, 63, 52, 14, 56, 69, 99, 46, 85, 25, 45, 32];
 // -- при помощи метода sort и колбека  отсортировать массив.
-// let resultSort = arr.sort(function(a, b) {
+// let resultSort = arr.sort((a, b) => {
 //     return a - b;
 // });
 // console.log(resultSort);
 // -- при помощи метода sort и колбека отсортировать массив в ниспадающем напралении.
-// let resultSort = arr.sort(function(a, b) {
+// let resultSort = arr.sort((a, b) => {
 //     return b - a;
 // });
 // console.log(resultSort);
 // -- при помощи filter получить числа кратные 3
-// let result = arr.filter(function(num) {
+// let result = arr.filter((num) => {
 //     if (num % 3 === 0) {
 //         return true;
 //     }
@@ -22,7 +22,7 @@
 // })
 // console.log(result);
 // -- при помощи filter получить числа кратные 10
-// let result = arr.filter(function(num) {
+// let result = arr.filter((num) => {
 //     if (num % 10 === 0) {
 //         return true;
 //     }
@@ -32,11 +32,11 @@
 // })
 // console.log(result);
 // -- перебрать (проитерировать) массив при помощи foreach()
-// let result = arr.forEach (function(num) {
+// let result = arr.forEach ((num) => {
 //     console.log(num);
 // })
 // -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше
-// let result = arr.map (function(num) {
+// let result = arr.map ((num) => {
 //     return num * 3;
 // })
 // console.log(result);
@@ -44,7 +44,7 @@
 // - создать массив со словами на 15-20 элементов.
 // let txt = ['make', 'some', 'noise', 'hi', 'owu', 'and', 'octen', 'big', 'little', 'ok', 'craete', 'animal', 'car', 'hello', 'siri'];
 // -- отсортировать его по алфавиту в восходящем порядке.
-// let result = txt.sort(function(a, b) {
+// let result = txt.sort((a, b) => {
 //     if (a > b){
 //         return 1;
 //     } else {
@@ -53,7 +53,7 @@
 // });
 // console.log(result);
 // -- отсортировать его по алфавиту  в нисходящем порядке.
-// let result = txt.sort(function(a, b) {
+// let result = txt.sort((a, b) => {
 //     if (a < b){
 //         return 1;
 //     } else {
@@ -384,11 +384,12 @@ let cars = [0,
     {producer: 'seat', power: 115, user:{name: 'dimas', age: 36, experience: 17}, price: 10000, year: 2013}
 ]
 // // // Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
-// for(let i = 0; i < cars.length; i += 2){
-//    cars[i].power += (cars[i].power *= 0.1);
-//     }
-// console.log(cars);
+for(let i = 0; i < cars.length; i += 2){
+   cars[i].power += (cars[i].power *= 0.1);
+    }
+console.log(cars);
 // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
+
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
 // Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
 // for(let i = 0; i < cars.length; i += 2){
