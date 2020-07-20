@@ -389,7 +389,10 @@ for(let i = 0; i < cars.length; i += 2){
     }
 console.log(cars);
 // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
-
+cars[2].user = {name: 'vika', age: 18, experience: 2};
+cars[4].user = {name: 'gendos', age: 56, experience: 23};
+cars[6].user = {name: 'tema', age: 30, experience: 10};
+cars[8].user = {name: 'irka', age: 27, experience: 5};
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
 // Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
 // for(let i = 0; i < cars.length; i += 2){
