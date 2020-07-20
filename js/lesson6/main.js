@@ -71,18 +71,18 @@
 
 // Все робити через функції масивів (foreach, map ...тд)
 // Дан масив :
-let users = [ 
-    {name: 'vasya', age: 31, status: false}, 
-    {name: 'petya', age: 30, status: true}, 
-    {name: 'kolya', age: 29, status: true}, 
-    {name: 'olya', age: 28, status: false}, 
-    {name: 'max', age: 30, status: true}, 
-    {name: 'anya', age: 31, status: false}, 
-    {name: 'oleg', age: 28, status: false}, 
-    {name: 'andrey', age: 29, status: true}, 
-    {name: 'masha', age: 30, status: true}, 
-    {name: 'olya', age: 31, status: false}, 
-    {name: 'max', age: 31, status: true} ];
+// let users = [ 
+//     {name: 'vasya', age: 31, status: false}, 
+//     {name: 'petya', age: 30, status: true}, 
+//     {name: 'kolya', age: 29, status: true}, 
+//     {name: 'olya', age: 28, status: false}, 
+//     {name: 'max', age: 30, status: true}, 
+//     {name: 'anya', age: 31, status: false}, 
+//     {name: 'oleg', age: 28, status: false}, 
+//     {name: 'andrey', age: 29, status: true}, 
+//     {name: 'masha', age: 30, status: true}, 
+//     {name: 'olya', age: 31, status: false}, 
+//     {name: 'max', age: 31, status: true} ];
 // - відсортувати його за  віком (зростання , а потім окремо спадання)
 // let sortUsersAge = users.sort((a, b) => {
 //     return a.age - b.age;
@@ -118,23 +118,23 @@ let users = [
 // console.log(findedUser)
 
 // - пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін)
-let usersId = users.map((user, id) => {
-    user.id = id + 1
+// let usersId = users.map((user, id) => {
+//     user.id = id + 1
 
-    return user;
-})
+//     return user;
+// })
 // console.log(usersId)
 // - відсортувати його за індентифікатором
-let sortById = users.sort((a, b) => {
-    let id_1 = a.id;
-    let id_2 = b.id;
-    if(id_1 > id_2){
-        return 1
-    } else {
-        return -1;
-    }
-})
-console.log(sortById);
+// let sortById = users.sort((a, b) => {
+//     let id_1 = a.id;
+//     let id_2 = b.id;
+//     if(id_1 > id_2){
+//         return 1
+//     } else {
+//         return -1;
+//     }
+// })
+// console.log(sortById);
 
 
 // -- наисать функцию калькулятора с 2мя числами и колбеком
@@ -384,23 +384,11 @@ let cars = [
     {producer: 'seat', power: 115, user:{name: 'dimas', age: 36, experience: 17}, price: 10000, year: 2013}
 ]
 // // // Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
-let carId = cars.map((car, id)=>{
-    car.id = id + 1
-    return car;
-})
-let sort = cars.sort((a, b) =>{
-    if(a.id > b.id){
-        return 1;
-    }else{
-        return -1;
+
+for(let i = 0; i < cars.length; i += 2){
+   cars[i].power += (cars[i].power *= 0.1);
     }
-})
-let bigUpdat = cars.map((car, index) =>{
-    if(!(index % 2 === 0)){
-       return car.power *= 0.1;
-    }
-})
-console.log(bigUpdat);
+console.log(cars);
 
 // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
