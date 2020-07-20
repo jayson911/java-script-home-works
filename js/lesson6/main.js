@@ -373,7 +373,7 @@
 // Власник автомобіля теж має бути обєкт, у якого є поля
 // Імя, вік, стаж водіння.
 // Створити не менше 7 та не більше 20 машинок.
-let cars = [
+let cars = [0,
     {producer: 'subaru', power: 400, user:{name: 'vova', age: 35, experience: 10}, price: 17000, year: 2016},
     {producer: 'bmw', power: 350, user:{name: 'gena', age: 30, experience: 3}, price: 15000, year: 2018},
     {producer: 'mersedec', power: 500, user:{name: 'andrey', age: 45, experience: 15}, price: 18000, year: 2020},
@@ -384,10 +384,10 @@ let cars = [
     {producer: 'seat', power: 115, user:{name: 'dimas', age: 36, experience: 17}, price: 10000, year: 2013}
 ]
 // // // Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
-for(let i = 0; i < cars.length; i += 2){
-   cars[i].power += (cars[i].power *= 0.1);
-    }
-console.log(cars);
+// for(let i = 0; i < cars.length; i += 2){
+//    cars[i].power += (cars[i].power *= 0.1);
+//     }
+// console.log(cars);
 // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
 // Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
@@ -399,16 +399,18 @@ console.log(cars);
 // Після того зробити перевірку досвіду ВСІХ наших водіїв. 
 // Якщо досвід водія менший за 5 років, але його вік більший за 25, 
 // то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
-for(let i = 0; i < 0; i++){
-    if(cars[i].user.experience < 5 && cars[i].user.age > 25){
-        cars[i].user.experience++;    
-    }
-}
-console.log(cars);
+// for(let i = 0; i < cars.length; i++){
+//     if(cars[i].user.experience < 5 && cars[i].user.age > 25){
+//         cars[i].user.experience++;    
+//     }
+// }
+// console.log(cars);
 
 // Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
-
-
+// let allCarsSum = cars.reduce((acc, curr) =>{
+//     return acc + curr.price;
+// });
+// console.log(allCarsSum);
 
 
 // Задача: дан отсортированный по возрастанию массив целых чисел. Необходимо вернуть наименьший и наибольший индекс заданного элемента.
@@ -421,3 +423,16 @@ console.log(cars);
 // Answer: MinIndex = 0, MaxIndex = 0.
 // 2. Key = 4
 // Answer: MinIndex = 3, MaxIndex = 6.
+
+// let arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14];
+
+// function finder(number, arr) {
+
+//   let minIndex = arr.indexOf(number)
+//   let maxIndex = arr.lastIndexOf(number)
+
+//   console.log('MinIndex = ' + minIndex)
+//   console.log('MaxIndex = ' + maxIndex)
+// }
+// finder(1, arr)
+// finder(4, arr)
