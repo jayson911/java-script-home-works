@@ -9,6 +9,7 @@
 //       якщо депутат не хабарник то щоб він відмовився,
 //       або ж якщо сума хабаря надто велика то щоб він вагався
 //       чи брати чи ні)
+
 // Клас фракція
 //   поля:
 //     список депутатів
@@ -88,4 +89,6 @@ class Dep extends Human{
     }
 }
 let dep1 = new Dep(70, 170, 'Tishenko', 'Nikolay', 29, true, 2000000);
+let dep2 = new Dep(115, 150, 'Poroshenko', 'Petro', 65, true, 3000000);
+let dep3 = new Dep(100, 180, 'Ivanov', 'Genka', 25, false, 100);
 console.log(dep1)
